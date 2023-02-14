@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         sh 'g++ test.cpp'
-        build job: 'PES1UG20CS609-1'
         echo 'Built Successfully ✅'
       }
     }
@@ -21,7 +20,7 @@ pipeline {
     }
   }
   post{
-    always{
+    failure{
         echo "Pipeline failed ❌"
     }
   }
