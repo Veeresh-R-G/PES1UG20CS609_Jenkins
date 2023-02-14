@@ -4,5 +4,5 @@ using namespace std;
 
 int main()
 {
-    cout << "This is TASK - 5 log" << endl;
+    cout << "This is TASK - 5 log" << endl
 }
